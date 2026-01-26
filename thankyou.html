@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Zero2Code</title>
+
+  <link rel="stylesheet" href="home_style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Stars background -->
+  <div class="stars-bg">
+    <div class="stars layer1"></div>
+    <div class="stars layer2"></div>
+    <div class="stars layer3"></div>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti" class="confetti"></canvas>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <img src="images/Logo without background.PNG" class="logo" alt="Zero2Code" />
+      <nav class="nav" id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="media.html">Media</a>
+  <a href="paths.html">Paths</a>
+  <a href="learning.html">Learning</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Mobile Menu Button -->
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <main class="thanks-page">
+    <section class="thanks-card fancy" data-aos="zoom-in">
+      <div class="thanks-badge">
+        <span class="dot"></span>
+        <span>Message Delivered</span>
+      </div>
+
+      <h1>Thank You! ✅</h1>
+      <p>
+        Your message has been sent successfully. I’ll reply to you as soon as possible.
+        Meanwhile, you can explore Media or go back home.
+      </p>
+
+      <div class="thanks-actions">
+        <a class="thanks-btn" href="index.html">Back to Home</a>
+        <a class="thanks-btn outline" href="media.html">Explore Media</a>
+      </div>
+
+      <div class="thanks-meta">
+        Redirecting to <b>Home</b> in <span id="count">8</span>s
+        <button id="cancelRedirect" class="cancel-btn" type="button">Cancel</button>
+      </div>
+
+      <div class="thanks-small">
+        <span class="brand">Zero2Code</span> — From Zero To Your First Line Of Code.
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    if (window.AOS) AOS.init({ duration: 700, once: true });
+
+    // ===== Auto Redirect Countdown =====
+    let seconds = 8;
+    const countEl = document.getElementById("count");
+    const cancelBtn = document.getElementById("cancelRedirect");
+    let canceled = false;
+
+    const timer = setInterval(() => {
+      if (canceled) return;
+      seconds--;
+      if (countEl) countEl.textContent = String(seconds);
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = "index.html";
+      }
+    }, 1000);
+
+    cancelBtn?.addEventListener("click", () => {
+      canceled = true;
+      clearInterval(timer);
+      cancelBtn.textContent = "Canceled";
+      cancelBtn.disabled = true;
+    });
+
+    // ===== Confetti (Lightweight) =====
+    const canvas = document.getElementById("confetti");
+    const ctx = canvas.getContext("2d");
+
+    function resize(){
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    const colors = ["#22d3ee", "#a855f7", "#60a5fa", "#d8b4fe"];
+    const pieces = Array.from({ length: 120 }, () => ({
+      x: Math.random() * canvas.width,
+      y: -Math.random() * canvas.height,
+      r: 3 + Math.random() * 4,
+      vx: -1 + Math.random() * 2,
+      vy: 2 + Math.random() * 4,
+      a: Math.random() * Math.PI,
+      va: -0.08 + Math.random() * 0.16,
+      c: colors[Math.floor(Math.random() * colors.length)],
+      life: 240 + Math.random() * 120
+    }));
+
+    function draw(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+
+      pieces.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.a += p.va;
+        p.life -= 1;
+
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.a);
+        ctx.fillStyle = p.c;
+        ctx.globalAlpha = Math.max(0, Math.min(1, p.life / 220));
+        ctx.fillRect(-p.r, -p.r, p.r * 2.2, p.r * 1.4);
+        ctx.restore();
+
+        if (p.y > canvas.height + 20 || p.life <= 0) {
+          p.x = Math.random() * canvas.width;
+          p.y = -20;
+          p.life = 240 + Math.random() * 120;
+        }
+      });
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Path | Zero2Code</title>
+
+  <link rel="stylesheet" href="home_style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Stars background -->
+  <div class="stars-bg">
+    <div class="stars layer1"></div>
+    <div class="stars layer2"></div>
+    <div class="stars layer3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <img src="images/Logo without background.PNG" class="logo" alt="Zero2Code" />
+      <nav class="nav" id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="media.html">Media</a>
+  <a href="paths.html">Paths</a>
+  <a href="learning.html">Learning</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Mobile Menu Button -->
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <main class="learn-page">
+    <!-- Hero -->
+    <section class="learn-hero" data-aos="fade-up">
+      <h1>Your Learning Path</h1>
+      <p>
+        A clear roadmap from beginner to building real projects. No confusion, no random tutorials —
+        just steps that actually work.
+      </p>
+
+      <div class="learn-hero-actions">
+        <a class="learn-cta" href="#path">Start the Path</a>
+        <a class="learn-cta outline" href="faq.html">Questions?</a>
+      </div>
+    </section>
+
+    <!-- Overall Progress -->
+    <section class="learn-overall" data-aos="fade-up" data-aos-delay="120">
+      <div class="learn-overall-top">
+        <h2>Overall Progress</h2>
+        <span class="overall-value" id="overallValue">0%</span>
+      </div>
+      <div class="overall-bar">
+        <div class="overall-fill" id="overallFill"></div>
+      </div>
+      <p class="learn-hint">
+        Tip: Click <b>Start</b> on a level to view details and mark it as “In progress”.
+      </p>
+    </section>
+
+    <!-- Path Cards -->
+    <section class="learn-grid" id="path">
+
+      <!-- Level 1 -->
+      <article class="level-card" data-aos="fade-up" data-level="1">
+        <div class="level-head">
+          <div>
+            <div class="level-badge">Level 1</div>
+            <h3>Foundations</h3>
+            <p class="level-sub">HTML • CSS • Basics of logic</p>
+          </div>
+
+          <button class="level-start" type="button" data-target="levelDetails1">
+            <span>Start</span><span class="chev">▾</span>
+          </button>
+        </div>
+
+        <div class="level-progress">
+          <span>Progress</span>
+          <div class="mini-bar"><div class="mini-fill" style="--w:25%"></div></div>
+          <b>25%</b>
+        </div>
+
+        <div class="level-details" id="levelDetails1" aria-hidden="true">
+          <ul>
+            <li>Build your first page (headings, images, links).</li>
+            <li>Understand layout (box model, flex basics, spacing).</li>
+            <li>Make it responsive for mobile.</li>
+            <li>Practice small UI sections (cards, buttons, navbar).</li>
+          </ul>
+
+          <div class="level-actions">
+            <a class="level-link" href="media.html">Watch videos</a>
+            <a class="level-link outline" href="faq.html">Common questions</a>
+            <button class="level-mark" type="button" data-mark="1">Mark In Progress</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Level 2 -->
+      <article class="level-card" data-aos="fade-up" data-aos-delay="60" data-level="2">
+        <div class="level-head">
+          <div>
+            <div class="level-badge">Level 2</div>
+            <h3>Core Skills</h3>
+            <p class="level-sub">JavaScript • DOM • Git basics</p>
+          </div>
+
+          <button class="level-start" type="button" data-target="levelDetails2">
+            <span>Start</span><span class="chev">▾</span>
+          </button>
+        </div>
+
+        <div class="level-progress">
+          <span>Progress</span>
+          <div class="mini-bar"><div class="mini-fill" style="--w:35%"></div></div>
+          <b>35%</b>
+        </div>
+
+        <div class="level-details" id="levelDetails2" aria-hidden="true">
+          <ul>
+            <li>Variables, loops, conditions, functions.</li>
+            <li>DOM: select, change, create elements.</li>
+            <li>Events: click, submit, scroll.</li>
+            <li>GitHub basics: push a project online.</li>
+          </ul>
+
+          <div class="level-actions">
+            <a class="level-link" href="media.html">Videos</a>
+            <a class="level-link outline" href="faq.html">FAQ</a>
+            <button class="level-mark" type="button" data-mark="2">Mark In Progress</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Level 3 -->
+      <article class="level-card" data-aos="fade-up" data-aos-delay="120" data-level="3">
+        <div class="level-head">
+          <div>
+            <div class="level-badge">Level 3</div>
+            <h3>Real Projects</h3>
+            <p class="level-sub">Portfolio • Landing pages • Small apps</p>
+          </div>
+
+          <button class="level-start" type="button" data-target="levelDetails3">
+            <span>Start</span><span class="chev">▾</span>
+          </button>
+        </div>
+
+        <div class="level-progress">
+          <span>Progress</span>
+          <div class="mini-bar"><div class="mini-fill" style="--w:55%"></div></div>
+          <b>55%</b>
+        </div>
+
+        <div class="level-details" id="levelDetails3" aria-hidden="true">
+          <ul>
+            <li>Build 3–5 projects (responsive + interactive).</li>
+            <li>Make a clean UI with consistent design system.</li>
+            <li>Deploy on Netlify and share your links.</li>
+            <li>Learn how to structure folders and assets.</li>
+          </ul>
+
+          <div class="level-actions">
+            <a class="level-link" href="media.html">Design ideas</a>
+            <a class="level-link outline" href="contact.html">Ask for review</a>
+            <button class="level-mark" type="button" data-mark="3">Mark In Progress</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Level 4 -->
+      <article class="level-card" data-aos="fade-up" data-aos-delay="180" data-level="4">
+        <div class="level-head">
+          <div>
+            <div class="level-badge">Level 4</div>
+            <h3>Job Ready</h3>
+            <p class="level-sub">CV • Interview • Real-world mindset</p>
+          </div>
+
+          <button class="level-start" type="button" data-target="levelDetails4">
+            <span>Start</span><span class="chev">▾</span>
+          </button>
+        </div>
+
+        <div class="level-progress">
+          <span>Progress</span>
+          <div class="mini-bar"><div class="mini-fill" style="--w:15%"></div></div>
+          <b>15%</b>
+        </div>
+
+        <div class="level-details" id="levelDetails4" aria-hidden="true">
+          <ul>
+            <li>Write a clean CV + portfolio links.</li>
+            <li>Practice explaining your projects clearly.</li>
+            <li>Learn debugging mindset and teamwork basics.</li>
+            <li>Apply consistently and improve from feedback.</li>
+          </ul>
+
+          <div class="level-actions">
+            <a class="level-link" href="faq.html">FAQ</a>
+            <a class="level-link outline" href="contact.html">Work with me</a>
+            <button class="level-mark" type="button" data-mark="4">Mark In Progress</button>
+          </div>
+        </div>
+      </article>
+
+    </section><!-- ✅ close learn-grid -->
+
+
+    <!-- ===== Lessons Section ===== -->
+    <section class="learn-lessons" id="lessons" data-aos="fade-up">
+      <div class="lessons-head">
+        <h2>Lessons</h2>
+        <p id="lessonsSubtitle">Pick a level to see the lessons here.</p>
+      </div>
+
+      <div class="lessons-wrap">
+        <!-- Left: lesson list -->
+        <aside class="lessons-list" id="lessonsList" aria-label="Lessons list">
+          <div class="lessons-empty">
+            <b>No level selected.</b>
+            <span>Click Start on any level to load lessons.</span>
+          </div>
+        </aside>
+
+        <!-- Right: lesson viewer -->
+        <div class="lesson-view" id="lessonView" aria-live="polite">
+          <div class="lesson-empty">
+            <h3>Ready when you are.</h3>
+            <p>Choose a level to start learning step-by-step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="learn-footer-cta" data-aos="zoom-in">
+      <h2>Ready to start?</h2>
+      <p>Pick Level 1 and begin building. No fear — just progress.</p>
+      <a class="learn-cta" href="#path">Start Now</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-copy">© 2026 Zero2Code — Made By Maab Azem</div>
+        <div class="footer-tagline">From Zero To Your First Line Of Code.</div>
+      </div>
+
+      <div class="social">
+        <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        <a href="#" aria-label="YouTube"><img src="images/youyube2.jpeg" alt="YouTube"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

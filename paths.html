@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paths | Zero2Code</title>
+
+  <link rel="stylesheet" href="home_style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Stars background -->
+  <div class="stars-bg">
+    <div class="stars layer1"></div>
+    <div class="stars layer2"></div>
+    <div class="stars layer3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <img src="images/Logo without background.PNG" class="logo" alt="Zero2Code" />
+      <nav class="nav" id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="media.html">Media</a>
+  <a href="paths.html" class="active">Paths</a>
+  <a href="learning.html">Learning</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Mobile Menu Button -->
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <main class="paths-page">
+    <!-- Hero -->
+    <section class="paths-hero" data-aos="fade-up">
+      <h1>Choose Your Path</h1>
+      <p>
+        Zero2Code is not “random tutorials”. It’s a clear journey.
+        Start with one path, follow the steps, build real projects.
+      </p>
+
+      <div class="paths-hero-actions">
+        <a class="learn-cta" href="#webpath">Start Web Developer</a>
+        <a class="learn-cta outline" href="learning.html#lessons">Go to Lessons</a>
+      </div>
+    </section>
+
+    <!-- Path Card -->
+    <section class="path-card" id="webpath" data-aos="fade-up" data-aos-delay="80">
+      <div class="path-top">
+        <div>
+          <div class="path-badge">Path v1</div>
+          <h2>Web Developer</h2>
+          <p class="path-sub">Build websites from Zero → Real projects → Portfolio.</p>
+        </div>
+
+        <a class="path-start" href="learning.html#path">
+  Start this path <span aria-hidden="true">→</span>
+</a>
+      </div>
+
+      <div class="path-steps">
+        <div class="step" data-aos="fade-up" data-aos-delay="120">
+          <h3>Step 1 — Foundations</h3>
+          <ul>
+            <li>HTML structure (headings, links, images)</li>
+            <li>CSS basics (colors, spacing, box model)</li>
+            <li>Responsive basics (mobile-friendly)</li>
+          </ul>
+          <div class="deliver">
+            <b>Deliverable:</b> A clean personal landing page.
+          </div>
+        </div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="160">
+          <h3>Step 2 — Core Skills</h3>
+          <ul>
+            <li>JavaScript basics (variables, conditions, loops)</li>
+            <li>DOM & events (click, form, scroll)</li>
+            <li>GitHub basics (publish your work)</li>
+          </ul>
+          <div class="deliver">
+            <b>Deliverable:</b> Interactive page (FAQ / Contact validation).
+          </div>
+        </div>
+
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <h3>Step 3 — Real Projects</h3>
+          <ul>
+            <li>Build 3–5 projects (responsive + interactive)</li>
+            <li>Design system (consistent UI)</li>
+            <li>Deploy on Netlify (live links)</li>
+          </ul>
+          <div class="deliver">
+            <b>Deliverable:</b> Portfolio website with 3 projects.
+          </div>
+        </div>
+      </div>
+
+      <div class="path-footer">
+        <div class="path-note">
+          <b>Goal:</b> Not memorizing code — learning how to build & solve problems.
+        </div>
+        <a class="learn-cta" href="learning.html#lessons">Open Lessons</a>
+      </div>
+    </section>
+
+    <!-- What you need -->
+    <section class="paths-need" data-aos="fade-up">
+      <h2>What You Need To Start</h2>
+
+      <div class="need-grid">
+        <div class="need-box">
+          <h3>English</h3>
+          <p>
+            You don’t need to be perfect. But you should understand basic words like:
+            <b>button, link, submit, error</b>.
+          </p>
+        </div>
+
+        <div class="need-box">
+          <h3>Math</h3>
+          <p>
+            Not advanced math. You mainly need logic: steps, conditions, and problem-solving.
+          </p>
+        </div>
+
+        <div class="need-box">
+          <h3>Mindset</h3>
+          <p>
+            Build → break → fix → improve. Mistakes are part of the process.
+            That’s how real developers learn.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next paths teaser -->
+    <section class="paths-next" data-aos="zoom-in">
+      <h2>Next Paths (Coming Soon)</h2>
+      <p>
+        After Web Developer, we’ll add: Frontend Advanced, Cyber Security, and Python Automation.
+      </p>
+      <a class="learn-cta outline" href="contact.html">Suggest a Path</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-copy">© 2026 Zero2Code — Made By Maab Azem</div>
+        <div class="footer-tagline">From Zero To Your First Line Of Code.</div>
+      </div>
+
+      <div class="social">
+        <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        <a href="#" aria-label="YouTube"><img src="images/youyube2.jpeg" alt="YouTube"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    if (window.AOS) AOS.init({ duration: 700, once: true });
+  </script>
+</body>
+</html>

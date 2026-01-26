@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Zero2Code</title>
+
+  <link rel="stylesheet" href="home_style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Stars background -->
+  <div class="stars-bg">
+    <div class="stars layer1"></div>
+    <div class="stars layer2"></div>
+    <div class="stars layer3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <img src="images/Logo without background.PNG" class="logo" alt="Zero2Code" />
+
+      <nav class="nav" id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="media.html">Media</a>
+  <a href="paths.html">Paths</a>
+  <a href="learning.html">Learning</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Mobile Menu Button -->
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <main class="contact-page">
+
+    <!-- Hero -->
+    <section class="contact-hero" data-aos="fade-up">
+      <h1>Let’s Talk</h1>
+      <p>
+        Have a question, want a custom website, or need a learning plan?
+        Send a message and I’ll reply with a clear next step.
+      </p>
+    </section>
+
+    <section class="contact-wrap">
+
+      <!-- Left: Cards -->
+      <aside class="contact-side" data-aos="fade-right">
+        <div class="contact-card">
+          <h3>Fast Support</h3>
+          <p>Ask anything about learning, projects, or your next steps. Clear answers, no confusion.</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Custom Projects</h3>
+          <p>Need a website or a digital product? Tell me your idea and I’ll suggest a clean plan.</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Social</h3>
+          <div class="contact-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right: Form -->
+      <section class="contact-form-card" data-aos="fade-left">
+        <h2>Send a Message</h2>
+
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+            <small class="error-msg" id="nameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="name@example.com" />
+            <small class="error-msg" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic">
+              <option value="Learning">Learning</option>
+              <option value="Project">Custom Project</option>
+              <option value="Collab">Collaboration</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Write your message..."></textarea>
+            <small class="error-msg" id="messageError"></small>
+          </div>
+
+          <button class="send-btn" id="sendBtn" type="submit">
+            <span class="btn-text">Send</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="tiny-note">
+            By sending this message, you agree that we may contact you back via email.
+          </p>
+        </form>
+      </section>
+
+    </section>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" aria-live="polite" aria-atomic="true">
+      ✅ Message sent successfully!
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-copy">© 2026 Zero2Code — Made By Maab Azem</div>
+        <div class="footer-tagline">From Zero To Your First Line Of Code.</div>
+      </div>
+
+      <div class="social">
+        <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        <a href="#" aria-label="YouTube"><img src="images/youyube2.jpeg" alt="YouTube"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

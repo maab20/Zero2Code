@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Zero2Code</title>
+
+  <link rel="stylesheet" href="home_style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Stars background -->
+  <div class="stars-bg">
+    <div class="stars layer1"></div>
+    <div class="stars layer2"></div>
+    <div class="stars layer3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <img src="images/Logo without background.PNG" class="logo" alt="Zero2Code" />
+
+      <nav class="nav" id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="media.html">Media</a>
+  <a href="paths.html">Paths</a>
+  <a href="learning.html">Learning</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Mobile Menu Button -->
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <main class="faq-page">
+    <!-- Hero -->
+    <section class="faq-hero" data-aos="fade-up">
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about Zero2Code — simple, clear, and beginner-friendly.</p>
+
+      <div class="faq-search">
+        <input id="faqSearch" type="text" placeholder="Search a question... (e.g. HTML, SQL, beginner)" />
+        <span class="faq-search-icon" aria-hidden="true">⌕</span>
+      </div>
+
+      <div class="faq-tags" data-aos="fade-up" data-aos-delay="120">
+        <button class="faq-tag active" data-filter="all">All</button>
+        <button class="faq-tag" data-filter="getting-started">Getting Started</button>
+        <button class="faq-tag" data-filter="learning">Learning</button>
+        <button class="faq-tag" data-filter="projects">Projects</button>
+        <button class="faq-tag" data-filter="pricing">Pricing</button>
+      </div>
+    </section>
+
+    <!-- FAQ Grid -->
+    <section class="faq-grid" id="faqGrid">
+
+      <!-- Card 1 -->
+      <article class="faq-item" data-category="getting-started" data-aos="fade-up">
+        <button class="faq-q" aria-expanded="false">
+          <span>What is Zero2Code?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            Zero2Code is a beginner-friendly learning space focused on clear explanations, practical examples,
+            and real projects — helping you go from “I’m lost” to “I can build.”
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="faq-item" data-category="getting-started" data-aos="fade-up" data-aos-delay="60">
+        <button class="faq-q" aria-expanded="false">
+          <span>I’m a total beginner. Where do I start?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            Start with HTML + CSS basics, then move to JavaScript. After that, build 2–3 small projects
+            (landing page, portfolio, mini app). That’s the fastest path to confidence.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="faq-item" data-category="learning" data-aos="fade-up" data-aos-delay="120">
+        <button class="faq-q" aria-expanded="false">
+          <span>Do I need to be “good at math” to code?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            No. Programming is mainly logic + problem solving. Math helps in some fields, but for web development
+            and most apps you can do great without advanced math.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="faq-item" data-category="learning" data-aos="fade-up">
+        <button class="faq-q" aria-expanded="false">
+          <span>How long does it take to learn programming?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            If you practice consistently (even 30–60 minutes a day), you can build real projects within weeks.
+            Becoming job-ready depends on practice + portfolio + consistency.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="faq-item" data-category="projects" data-aos="fade-up" data-aos-delay="60">
+        <button class="faq-q" aria-expanded="false">
+          <span>What projects should I build first?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            Best starter projects: landing page, personal portfolio, responsive UI sections, simple to-do app,
+            and a mini “FAQ + search” component (like this page).
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="faq-item" data-category="projects" data-aos="fade-up" data-aos-delay="120">
+        <button class="faq-q" aria-expanded="false">
+          <span>Can I connect HTML/CSS with C# and SQL?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            Yes — usually via a backend (ASP.NET) that talks to SQL, and your frontend talks to the backend.
+            You don’t “connect CSS to SQL” directly — the backend is the bridge.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="faq-item" data-category="pricing" data-aos="fade-up">
+        <button class="faq-q" aria-expanded="false">
+          <span>Is Zero2Code free?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            The community and many resources can be free. If you offer coaching, premium projects, or
+            structured programs, you can add paid options later — the site is ready for it.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 8 -->
+      <article class="faq-item" data-category="pricing" data-aos="fade-up" data-aos-delay="60">
+        <button class="faq-q" aria-expanded="false">
+          <span>Can I request a custom website or project?</span>
+          <span class="faq-icon" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <p>
+            Yes. Use the Contact page and describe what you want (goal, style, pages, deadline). We’ll reply
+            with a clear plan.
+          </p>
+        </div>
+      </article>
+
+      <!-- 9 -->
+<article class="faq-item" data-category="getting-started" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Do I need a powerful computer to start coding?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      No, you don’t need an expensive or powerful computer to begin.
+      Most web development and beginner programming works perfectly on basic laptops.
+      You only need a browser, a code editor, and motivation.
+      Zero2Code is built so anyone can start with what they already have.
+      Your skills matter more than your hardware.
+    </p>
+  </div>
+</article>
+
+<!-- 10 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Can I learn programming without going to college?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      Yes, many successful developers are self-taught.
+      What matters most is your portfolio and what you can build.
+      Companies care more about skills than certificates.
+      Zero2Code is designed to help you build real projects.
+      That’s what makes you stand out.
+    </p>
+  </div>
+</article>
+
+<!-- 11 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Can I get a job with the skills from Zero2Code?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      Yes, if you practice and build projects seriously.
+      Employers look for people who can solve problems and build things.
+      Zero2Code focuses on exactly those skills.
+      A strong portfolio is more important than theory.
+      This gives you a real chance in the job market.
+    </p>
+  </div>
+</article>
+
+<!-- 12 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>How many hours per week should I study?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      Even 30 minutes a day can make a big difference.
+      The most important thing is consistency.
+      Studying a little every day is better than studying many hours once a week.
+      Programming is a skill that grows with practice.
+      The more you build, the faster you improve.
+    </p>
+  </div>
+</article>
+
+<!-- 13 -->
+<article class="faq-item" data-category="projects" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Can I build real websites with what I learn here?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      Yes, everything you learn is meant to be used in real projects.
+      You will build actual websites and applications, not just exercises.
+      These projects can go into your portfolio.
+      They show employers and clients what you can do.
+      This is how you turn learning into real opportunities.
+    </p>
+  </div>
+</article>
+
+<!-- 14 -->
+<article class="faq-item" data-category="getting-started" data-aos="fade-up">
+  <button class="faq-q">
+    <span>What do I need to start learning programming?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      You only need a computer, a stable internet connection, and a simple code editor like VS Code.
+      Start with a clear learning path instead of random tutorials.
+      Commit to small daily practice, even 30 minutes, because consistency beats motivation.
+      Build tiny projects from day one so you can actually see progress.
+      Most importantly: be patient — feeling confused at first is part of the process.
+    </p>
+  </div>
+</article>
+
+<!-- 15 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Which skills should I improve first (English, math, logic)?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      English helps a lot because documentation, errors, and tutorials are mostly in English.
+      You don’t need advanced math for web development, but you do need basic logic and problem solving.
+      Focus on understanding concepts and practicing, not memorizing.
+      Improve English gradually while you code: read small docs, learn keywords, and search smart.
+      If you build consistently, your “logic muscle” will grow naturally over time.
+    </p>
+  </div>
+</article>
+
+<!-- 16 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Is it better to learn alone, from a course, or from university?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      Self-learning is flexible and cheap, but it requires strong discipline and a clear roadmap.
+      Courses are great when you want structure, practice tasks, and faster progress.
+      University gives deeper theory and a recognized degree, but it takes more time and may include many unrelated subjects.
+      The best path for most beginners is: start with self-learning + a structured course, then consider university if you want the degree.
+      In all cases, your portfolio and real projects are what truly prove your skills.
+    </p>
+  </div>
+</article>
+
+<!-- 17 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>Will software engineers struggle to find jobs in the next few years because of AI?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      AI is changing the industry, but it’s not “ending” programming — it’s changing how we work.
+      The demand is shifting toward developers who can build real products, understand systems, and solve problems — not just write syntax.
+      Beginners may find it more competitive, so having projects, a portfolio, and real skills matters more than ever.
+      Think of AI as a tool that speeds you up, not a replacement for understanding.
+      If you keep learning and building, there will still be strong opportunities in tech.
+    </p>
+  </div>
+</article>
+
+<!-- 18 -->
+<article class="faq-item" data-category="learning" data-aos="fade-up">
+  <button class="faq-q">
+    <span>How do I know if I am actually improving in programming?</span>
+    <span class="faq-icon">▾</span>
+  </button>
+  <div class="faq-a">
+    <p>
+      You know you are improving when problems that once confused you start to feel easier.
+      When you can build small things without copying everything, that is real progress.
+      Bugs stop feeling scary and become puzzles you know how to solve.
+      You start understanding why code works, not just how to write it.
+      The biggest sign of growth is when you feel more confident trying new ideas.
+    </p>
+  </div>
+</article>
+
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="faq-cta" data-aos="zoom-in">
+      <h2>Still have questions?</h2>
+      <p>Send me a message and I’ll help you choose the best learning path.</p>
+      <a class="faq-cta-btn" href="contact.html">Contact Me</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-copy">© 2026 Zero2Code — Made By Maab Azem</div>
+        <div class="footer-tagline">From Zero To Your First Line Of Code.</div>
+      </div>
+
+      <div class="social">
+        <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        <a href="#" aria-label="YouTube"><img src="images/youyube2.jpeg" alt="YouTube"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
