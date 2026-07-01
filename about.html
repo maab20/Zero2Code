@@ -2,194 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Zero2Code - About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero2Code - About Us</title>
-
-  <link rel="stylesheet" href="home_style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="home_style.css">
 </head>
 
 <body>
-  <!-- Stars background -->
   <div class="stars-bg">
     <div class="stars layer1"></div>
     <div class="stars layer2"></div>
     <div class="stars layer3"></div>
   </div>
 
-  <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <img src="images/Logo without background.PNG" class="logo" alt="Zero2Code">
 
       <nav class="nav" id="mainNav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="media.html">Media</a>
-  <a href="paths.html">Paths</a>
-  <a href="learning.html">Learning</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="media.html">Media</a>
+        <a href="paths.html">Paths</a>
+        <a href="learning.html">Learning</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<!-- Mobile Menu Button -->
-<button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
     <div class="header-line"></div>
   </header>
 
-  <div class="aboutMY">
-    <!-- LEFT -->
-    <div class="leftSide" data-aos="fade-right" data-aos-delay="100">
+  <main class="about-page-new">
 
-      <div class="bigTitle" data-aos="zoom-in" data-aos-delay="150">
-        So, Who I am
-      </div>
+    <section class="about-hero-new">
+      <div class="about-hero-text" data-aos="fade-right">
+        <span class="about-badge">About Zero2Code</span>
+        <h1>From Zero To Your First Line Of Code.</h1>
+        <p>
+          Zero2Code is a modern educational website created to help beginners start
+          learning programming with a clear path, simple explanations, and a clean user experience.
+        </p>
 
-      <div class="langsHeader" data-aos="fade-up" data-aos-delay="200">
-        Languages I Know <span></span>
-      </div>
-
-      <div class="langBoxes">
-        <!-- Frontend -->
-        <div class="langBox" data-aos="fade-up" data-aos-delay="250">
-          <h4>Frontend</h4>
-
-          <div class="skill">
-            <span>HTML</span>
-            <div class="bar"><div class="fill" style="--w:75%"></div></div>
-          </div>
-
-          <div class="skill">
-            <span>CSS</span>
-            <div class="bar"><div class="fill" style="--w:55%"></div></div>
-          </div>
-
-          <div class="skill">
-            <span>JavaScript</span>
-            <div class="bar"><div class="fill" style="--w:50%"></div></div>
-          </div>
+        <div class="about-actions">
+          <a href="learning.html" class="about-btn primary">Start Learning</a>
+          <a href="paths.html" class="about-btn secondary">View Paths</a>
         </div>
+      </div>
 
-        <!-- Backend -->
-        <div class="langBox" data-aos="fade-up" data-aos-delay="320">
-          <h4>Backend</h4>
-
-          <div class="skill">
-            <span>C#</span>
-            <div class="bar"><div class="fill" style="--w:80%"></div></div>
-          </div>
-
-          <div class="skill">
-            <span>SQL</span>
-            <div class="bar"><div class="fill" style="--w:70%"></div></div>
-          </div>
-
-          <div class="skill">
-            <span>Python</span>
-            <div class="bar"><div class="fill" style="--w:60%"></div></div>
-          </div>
+      <div class="about-profile-card" data-aos="fade-left">
+        <div class="profile-glow"></div>
+        <div class="profile-img-box">
+          <img src="images/Maab.PNG.jpg" alt="Maab Azem">
         </div>
-
-        <!-- Systems -->
-        <div class="langBox" data-aos="fade-up" data-aos-delay="390">
-          <h4>Systems</h4>
-
-          <div class="skill">
-            <span>C++</span>
-            <div class="bar"><div class="fill" style="--w:40%"></div></div>
-          </div>
-
-          <div class="skill">
-            <span>C</span>
-            <div class="bar"><div class="fill" style="--w:35%"></div></div>
-          </div>
-
-          <div class="skill">
-            <span>Bash</span>
-            <div class="bar"><div class="fill" style="--w:45%"></div></div>
-          </div>
+        <h2>Maab Azem</h2>
+        <p>Software Engineering Student</p>
+        <div class="profile-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>C#</span>
         </div>
-
       </div>
-    </div>
+    </section>
 
-    <!-- RIGHT -->
-    <div class="myprofile" data-aos="fade-left" data-aos-delay="150">
-      <img src="images/maab2.jpg" class="myphoto" alt="Maab">
-      <div class="myinfo">
-        <p>My name is Maab Azem, I’m a 20-year-old software engineer with a clear mission:
-          to make technology simple, logical, and accessible to everyone.</p>
+    <section class="about-section-new" data-aos="fade-up">
+      <h2>So, Who Am I?</h2>
+      <p>
+        My name is Maab Azem. I am a Software Engineering student studying Practical
+        Software Engineering. I created this project to practice front-end development
+        and build a real multi-page website using HTML, CSS, and JavaScript.
+      </p>
+    </section>
 
-        <p>I chose this path knowing it wouldn’t be easy. Many people hear the word “programming”
-          and immediately think it’s something complicated, cold, and impossible to understand —
-          but I’m here to prove the opposite.</p>
-
-        <p>Programming isn’t about being a genius. It’s about logic, curiosity, and persistence.</p>
-
-        <p>Through my work and projects, I aim to show people that if you can think, you can code.
-          With the right mindset and determination, anyone can turn ideas into real digital products.</p>
-
-        <p>I don’t just build websites and applications — I build confidence in people who once
-          thought this world wasn’t for them.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mission -->
-  <section class="mygoal" id="mygoal" data-aos="fade-up" data-aos-delay="120">
-    <h2 class="mygoal-title">Zero2Code Mission</h2>
-
-    <div class="goal-card" id="goalCard" data-aos="zoom-in" data-aos-delay="180">
-      <div class="goal-preview">
+    <section class="about-grid-new">
+      <div class="about-card-new" data-aos="fade-up">
+        <h3>My Goal</h3>
         <p>
-          At Zero2Code, my mission is to break down the barriers that make programming seem intimidating.
-          I want to create a space where beginners feel welcome, supported, and confident to take their
-          first steps into coding.
-        </p>
-
-        <p class="preview-2">
-          By providing clear explanations, practical examples, and a structured learning path, I help people
-          transform curiosity into real, usable skills.
+          My goal is to improve step by step, build real projects, and become stronger
+          in web development, programming logic, and problem solving.
         </p>
       </div>
 
-      <div class="goal-more" id="goalMore" aria-hidden="true">
+      <div class="about-card-new" data-aos="fade-up" data-aos-delay="100">
+        <h3>Why I Built This</h3>
         <p>
-          Zero2Code is more than just a learning platform – it is a growing community built around the belief
-          that anyone can learn to code. Here, questions are encouraged, mistakes are part of the process,
-          and progress is celebrated.
-        </p>
-
-        <p>
-          I believe the best way to learn programming is to build, break, and rebuild. That’s why Zero2Code
-          focuses on real projects that start small and grow step by step – so learners can see progress
-          quickly and stay motivated.
-        </p>
-
-        <p>
-          Every topic is explained in a clear, beginner-friendly way, then reinforced with exercises and mini
-          challenges. The goal is not memorizing syntax – it’s learning how to think and solve problems.
-        </p>
-
-        <p>
-          Over time, beginners stop feeling lost – and start feeling like creators.
+          Many beginners feel confused when starting programming. Zero2Code gives them
+          a simple entry point with a clean design and organized learning path.
         </p>
       </div>
 
-      <button class="goal-toggle" id="goalToggle" aria-expanded="false" aria-controls="goalMore" type="button">
-        <span class="btn-text">Read more</span>
-        <span class="chev" aria-hidden="true">▾</span>
-      </button>
-    </div>
-  </section>
+      <div class="about-card-new" data-aos="fade-up" data-aos-delay="200">
+        <h3>Project Purpose</h3>
+        <p>
+          This website was developed as part of my learning journey to practice layout,
+          responsive design, animations, navigation, and user interface structure.
+        </p>
+      </div>
+    </section>
 
-  <!-- Footer -->
+    <section class="skills-section-new" data-aos="fade-up">
+      <h2>Skills I Practice</h2>
+
+      <div class="skill-row">
+        <span>HTML</span>
+        <div class="skill-bar"><div style="width: 90%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <span>CSS</span>
+        <div class="skill-bar"><div style="width: 85%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <span>JavaScript</span>
+        <div class="skill-bar"><div style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <span>C#</span>
+        <div class="skill-bar"><div style="width: 75%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <span>SQL</span>
+        <div class="skill-bar"><div style="width: 65%"></div></div>
+      </div>
+    </section>
+
+    <section class="languages-section-new" data-aos="fade-up">
+      <h2>Languages I Know</h2>
+      <div class="about-language-list">
+        <span>Arabic</span>
+        <span>Hebrew</span>
+        <span>English</span>
+      </div>
+    </section>
+
+    <section class="mission-section-new" data-aos="fade-up">
+      <h2>Zero2Code Mission</h2>
+      <p>
+        Zero2Code is more than just a learning website. It is a beginner-friendly
+        platform designed to make programming feel less complicated and more organized.
+      </p>
+      <p>
+        The mission is to help students understand the basics, follow a clear path,
+        and gain confidence while learning how to code.
+      </p>
+    </section>
+
+  </main>
+
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-left">
@@ -198,9 +167,15 @@
       </div>
 
       <div class="social">
-        <a href="#" aria-label="Instagram"><img src="images/instagram.jpeg" alt="Instagram"></a>
-        <a href="#" aria-label="YouTube"><img src="images/youyube2.jpeg" alt="YouTube"></a>
-        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="Instagram">
+          <img src="images/instagram.jpeg" alt="Instagram">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="images/youyube2.jpeg" alt="YouTube">
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
       </div>
     </div>
   </footer>
